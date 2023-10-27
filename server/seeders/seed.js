@@ -1,6 +1,6 @@
 const db = require("../config/connection");
 const { Deck } = require("../models");
-const deckSeeds = require("./deckSeeds.json";
+const deckSeeds = require("./deckSeeds.json");
 
 db.once("open", async () => {
   try {
