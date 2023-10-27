@@ -51,6 +51,28 @@ const resolvers = {
         throw new Error("There was an error in creating new deck", err.message);
       }
     },
+    updateDeck: async (parent, { deckId, newCards }) => {
+      if (!newCards) {
+        throw new Error("newCards object is undefined");
+      }
+
+      try {
+        const filter = { _id: deckId };
+
+        // Should be an array of objects
+        const update = { cards: newCards };
+
+        const createdCards = await Deck.findOneAndUpdate(filter, update);
+
+        if (!createdCards) {
+          throw new Error("There was an issue in finding a deck and updating it");
+        }
+
+        return createdCards;
+      } catch (err) {
+        throw new Error("There was an error in finding and updating a deck", err.message);
+      }
+    },
     deleteDeck: async (parent, { id }) => {
       if (!id) {
         throw new Error("id field must be filled to delete a deck");

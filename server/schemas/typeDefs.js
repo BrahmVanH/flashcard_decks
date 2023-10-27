@@ -32,6 +32,7 @@ const typeDefs = gql`
 
   type Mutation {
     createDeck(newDeck: newDeck!): Deck
+    updateDeck(deckId: ID!, newCards: [newCard!]): Deck
     deleteDeck(id: ID!): Deck
   }
 
