@@ -9,7 +9,7 @@ const typeDefs = gql`
     solution: String
   }
   type Deck {
-    _id ID!
+    _id: ID!
     deckName: String!
     cards: [Card]
   }
