@@ -1,5 +1,5 @@
 {
-  "name": "PlushLab",
+  "name": "Flashcard_Server",
   "version": "1.0.0",
   "description": "",
   "proxy": "http://localhost:3001",
