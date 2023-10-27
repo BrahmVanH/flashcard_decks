@@ -1,0 +1,53 @@
+
+
+.flashcard {
+	background-color: white;
+	padding: 0.5rem;
+	margin: 1rem;
+	height: 50vh !important;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+	min-width: 0;
+	color: var(--bs-body-color);
+	border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+	border-radius: var(--bs-card-border-radius);
+}
+
+.flashcard-header {
+	background-color: #fab699;
+	color: white;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.flashcard-content-container {
+  background-color: #F8C8DC;
+  height: 100%;
+  width: 100%;
+  margin: 0.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.flashcard-footer {
+	background-color: #fab699;
+  width: 100%;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.show-solution-btn {
+  margin: 0.5rem;
+}
+
+.next-card-btn {
+  margin: 0.5rem;
+
+}
