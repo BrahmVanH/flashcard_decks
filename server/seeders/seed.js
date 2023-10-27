@@ -1,8 +1,12 @@
 const db = require("../config/connection");
-const {} = require("../models");
+const { Deck } = require("../models");
+const deckSeeds = require("./deckSeeds.json";
 
 db.once("open", async () => {
   try {
+    await Deck.deleteMany();
+
+    await Deck.create(deckSeeds);
     console.log("done seeding");
     process.exit(0);
   } catch (err) {

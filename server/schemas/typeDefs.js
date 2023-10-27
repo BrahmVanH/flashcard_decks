@@ -2,9 +2,38 @@ const { gql } = require("apollo-server-express");
 
 const typeDefs = gql`
 
-  type Query {}
+  type Card {
+    _id: ID!
+    title: String
+    prompt: String
+    solution: String
+  }
+  type Deck {
+    _id ID!
+    deckName: String!
+    cards: [Card]
+  }
 
-  type Mutation {}
+  input newCard {
+    title: String!
+    prompt: String!
+    solution: String!
+  }
+
+  input newDeck {
+    title: String
+    cards: [newCard]
+  }
+
+  type Query {
+    getAllDecks: [Deck]
+    getDeckById(id: ID!): [Deck]
+  }
+
+  type Mutation {
+    createDeck(newDeck: newDeck!): Deck
+    deleteDeck(id: ID!): Deck
+  }
 
 `;
 

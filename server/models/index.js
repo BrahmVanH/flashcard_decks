@@ -1,2 +1,2 @@
-
-module.exports = {  };
+const Deck = require("./Deck");
+module.exports = { Deck };

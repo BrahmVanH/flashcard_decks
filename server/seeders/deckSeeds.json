@@ -1,0 +1,631 @@
+{
+  "deckName": "languageFlashcards",
+  "cards": [
+    {
+      "title": "English-Spanish",
+      "prompt": "Hello",
+      "solution": "Hola"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Hello",
+      "solution": "Bonjour"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Goodbye",
+      "solution": "Adiós"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Goodbye",
+      "solution": "Au revoir"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Thank you",
+      "solution": "Gracias"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Thank you",
+      "solution": "Merci"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Please",
+      "solution": "Por favor"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Please",
+      "solution": "S'il vous plaît"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Yes",
+      "solution": "Sí"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Yes",
+      "solution": "Oui"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "No",
+      "solution": "No"
+    },
+    {
+      "title": "English-French",
+      "prompt": "No",
+      "solution": "Non"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I love you",
+      "solution": "Te amo"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I love you",
+      "solution": "Je t'aime"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Good morning",
+      "solution": "Buenos días"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Good morning",
+      "solution": "Bonjour"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Good afternoon",
+      "solution": "Buenas tardes"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Good afternoon",
+      "solution": "Bonne après-midi"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Good evening",
+      "solution": "Buenas noches"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Good evening",
+      "solution": "Bonsoir"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Yes, please",
+      "solution": "Sí, por favor"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Yes, please",
+      "solution": "Oui, s'il vous plaît"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "No, thank you",
+      "solution": "No, gracias"
+    },
+    {
+      "title": "English-French",
+      "prompt": "No, thank you",
+      "solution": "Non, merci"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Excuse me",
+      "solution": "Perdón"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Excuse me",
+      "solution": "Excusez-moi"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I'm sorry",
+      "solution": "Lo siento"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I'm sorry",
+      "solution": "Je suis désolé(e)"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "How are you?",
+      "solution": "¿Cómo estás?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "How are you?",
+      "solution": "Comment ça va?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I'm fine",
+      "solution": "Estoy bien"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I'm fine",
+      "solution": "Je vais bien"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "What is your name?",
+      "solution": "¿Cómo te llamas?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "What is your name?",
+      "solution": "Comment tu t'appelles?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "My name is...",
+      "solution": "Mi nombre es..."
+    },
+    {
+      "title": "English-French",
+      "prompt": "My name is...",
+      "solution": "Je m'appelle..."
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Where is the bathroom?",
+      "solution": "¿Dónde está el baño?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Where is the bathroom?",
+      "solution": "Où sont les toilettes?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I don't understand",
+      "solution": "No entiendo"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I don't understand",
+      "solution": "Je ne comprends pas"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "How much does it cost?",
+      "solution": "¿Cuánto cuesta?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "How much does it cost?",
+      "solution": "Combien ça coûte?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Where is the nearest restaurant?",
+      "solution": "¿Dónde está el restaurante más cercano?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Where is the nearest restaurant?",
+      "solution": "Où se trouve le restaurant le plus proche?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I need help",
+      "solution": "Necesito ayuda"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I need help",
+      "solution": "J'ai besoin d'aide"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I don't know",
+      "solution": "No sé"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I don't know",
+      "solution": "Je ne sais pas"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I'm lost",
+      "solution": "Estoy perdido(a)"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I'm lost",
+      "solution": "Je suis perdu(e)"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "What time is it?",
+      "solution": "¿Qué hora es?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "What time is it?",
+      "solution": "Quelle heure est-il?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I'm hungry",
+      "solution": "Tengo hambre"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I'm hungry",
+      "solution": "J'ai faim"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I'm thirsty",
+      "solution": "Tengo sed"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I'm thirsty",
+      "solution": "J'ai soif"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Where can I find a bank?",
+      "solution": "¿Dónde puedo encontrar un banco?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Where can I find a bank?",
+      "solution": "Où puis-je trouver une banque?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "What is your phone number?",
+      "solution": "¿Cuál es tu número de teléfono?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "What is your phone number?",
+      "solution": "Quel est ton numéro de téléphone?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Do you speak English?",
+      "solution": "¿Hablas inglés?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Do you speak English?",
+      "solution": "Parles-tu anglais?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I don't speak Spanish",
+      "solution": "No hablo español"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I don't speak Spanish",
+      "solution": "Je ne parle pas espagnol"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Where is the nearest airport?",
+      "solution": "¿Dónde está el aeropuerto más cercano?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Where is the nearest airport?",
+      "solution": "Où se trouve l'aéroport le plus proche?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "What is your profession?",
+      "solution": "¿Cuál es tu profesión?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "What is your profession?",
+      "solution": "Quelle est ta profession?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I like it",
+      "solution": "Me gusta"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I like it",
+      "solution": "J'aime ça"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I don't like it",
+      "solution": "No me gusta"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I don't like it",
+      "solution": "Je n'aime pas ça"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Excuse me, can you help me?",
+      "solution": "Perdón, ¿puede ayudarme?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Excuse me, can you help me?",
+      "solution": "Excusez-moi, pouvez-vous m'aider?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "What is the weather like today?",
+      "solution": "¿Cómo está el clima hoy?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "What is the weather like today?",
+      "solution": "Quel temps fait-il aujourd'hui?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I don't feel well",
+      "solution": "No me siento bien"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I don't feel well",
+      "solution": "Je ne me sens pas bien"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "What is the date today?",
+      "solution": "¿Cuál es la fecha de hoy?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "What is the date today?",
+      "solution": "Quelle est la date d'aujourd'hui?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I'm tired",
+      "solution": "Estoy cansado(a)"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I'm tired",
+      "solution": "Je suis fatigué(e)"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Can you repeat that, please?",
+      "solution": "¿Puede repetir eso, por favor?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Can you repeat that, please?",
+      "solution": "Pouvez-vous répéter cela, s'il vous plaît?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "How do you say... in Spanish?",
+      "solution": "¿Cómo se dice... en español?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "How do you say... in Spanish?",
+      "solution": "Comment dit-on... en espagnol?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "What is this called?",
+      "solution": "¿Cómo se llama esto?"
+    },
+    
+    {
+      "title": "English-Spanish",
+      "prompt": "What is this called?",
+      "solution": "¿Cómo se llama esto?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "What is this called?",
+      "solution": "Comment cela s'appelle-t-il?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I need a doctor",
+      "solution": "Necesito un médico"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I need a doctor",
+      "solution": "J'ai besoin d'un médecin"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Can you speak more slowly?",
+      "solution": "¿Puedes hablar más despacio?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Can you speak more slowly?",
+      "solution": "Pouvez-vous parler plus lentement?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "What is your favorite food?",
+      "solution": "¿Cuál es tu comida favorita?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "What is your favorite food?",
+      "solution": "Quel est ton plat préféré?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I'm lost",
+      "solution": "Estoy perdido(a)"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I'm lost",
+      "solution": "Je suis perdu(e)"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "How old are you?",
+      "solution": "¿Cuántos años tienes?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "How old are you?",
+      "solution": "Quel âge as-tu?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "What is your favorite color?",
+      "solution": "¿Cuál es tu color favorito?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "What is your favorite color?",
+      "solution": "Quelle est ta couleur préférée?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I don't know",
+      "solution": "No lo sé"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I don't know",
+      "solution": "Je ne sais pas"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Nice to meet you",
+      "solution": "Mucho gusto"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Nice to meet you",
+      "solution": "Enchanté(e)"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "What time does the train leave?",
+      "solution": "¿A qué hora sale el tren?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "What time does the train leave?",
+      "solution": "À quelle heure part le train?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I'm sorry, I don't understand",
+      "solution": "Lo siento, no entiendo"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I'm sorry, I don't understand",
+      "solution": "Désolé(e), je ne comprends pas"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "Where can I buy tickets?",
+      "solution": "¿Dónde puedo comprar boletos?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "Where can I buy tickets?",
+      "solution": "Où puis-je acheter des billets?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "What is your favorite movie?",
+      "solution": "¿Cuál es tu película favorita?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "What is your favorite movie?",
+      "solution": "Quel est ton film préféré?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I'm from...",
+      "solution": "Soy de..."
+    },
+    {
+      "title": "English-French",
+      "prompt": "I'm from...",
+      "solution": "Je viens de..."
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "How do I get to the hotel?",
+      "solution": "¿Cómo llego al hotel?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "How do I get to the hotel?",
+      "solution": "Comment je vais à l'hôtel?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I don't have money",
+      "solution": "No tengo dinero"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I don't have money",
+      "solution": "Je n'ai pas d'argent"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I'm excited",
+      "solution": "Estoy emocionado(a)"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I'm excited",
+      "solution": "Je suis excité(e)"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "What is your favorite book?",
+      "solution": "¿Cuál es tu libro favorito?"
+    },
+    {
+      "title": "English-French",
+      "prompt": "What is your favorite book?",
+      "solution": "Quel est ton livre préféré?"
+    },
+    {
+      "title": "English-Spanish",
+      "prompt": "I love you",
+      "solution": "Te amo"
+    },
+    {
+      "title": "English-French",
+      "prompt": "I love you",
+      "solution": "Je t'aime"
+    }
+  ]
+}
