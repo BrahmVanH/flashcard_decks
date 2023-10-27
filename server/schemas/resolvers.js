@@ -33,7 +33,42 @@ const resolvers = {
       }
     },
   },
-  Mutation: {},
+  Mutation: {
+    createDeck: async (parent, { newDeck }) => {
+      if (!newDeck) {
+        throw new Error("newDeck object is undefined");
+      }
+
+      try {
+        const createdDeck = await Deck.create(newDeck);
+
+        if (!createdDeck) {
+          throw new Error("There was an issue in creating a new deck");
+        }
+
+        return createdDeck;
+      } catch (err) {
+        throw new Error("There was an error in creating new deck", err.message);
+      }
+    },
+    deleteDeck: async (parent, { id }) => {
+      if (!id) {
+        throw new Error("id field must be filled to delete a deck");
+      }
+
+      try {
+        const deletedDeck = await Deck.deleteOne({ _id: id });
+
+        if (!deletedDeck) {
+          throw new Error("There was an issue deleting a deck by id");
+        }
+
+        return deletedDeck;
+      } catch (err) {
+        throw new Error("There was an error in deleting a deck by id");
+      }
+    },
+  },
 };
 
 module.exports = resolvers;
