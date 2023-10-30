@@ -1,13 +1,18 @@
 const express = require('express');
 require('dotenv').config();
+const { readFileSync } = require('fs');
 const path = require('path');
 const { ApolloServer } = require('apollo-server-express');
 
-const { typeDefs, resolvers } = require('./schemas');
+const { 
+	// typeDefs,
+	 resolvers } = require('./schemas');
 const db = require('./config/connection');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+const typeDefs = readFileSync("./schemas/schema.graphql", { encoding: "utf-8" });
 
 const server = new ApolloServer({
 	typeDefs,
