@@ -58,8 +58,8 @@ export type MutationUpdateDeckArgs = {
 
 export type Query = {
   __typename?: 'Query';
-  getAllDecks?: Maybe<Array<Deck>>;
-  getDeckById?: Maybe<Array<Deck>>;
+  getAllDecks: Array<Deck>;
+  getDeckById: Array<Deck>;
 };
 
 
@@ -127,8 +127,8 @@ export type MutationUpdateDeckArgs = {
 
 export type Query = {
   __typename?: 'Query';
-  getAllDecks?: Maybe<Array<Deck>>;
-  getDeckById?: Maybe<Array<Deck>>;
+  getAllDecks: Array<Deck>;
+  getDeckById: Array<Deck>;
 };
 
 
