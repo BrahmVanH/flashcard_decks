@@ -23,15 +23,17 @@ function Home() {
 		// },
 	];
 	return (
-		<div className="flashcard-container">
-			{flashcardContent.map((flashcard) => (
-				<Flashcard
-					key={flashcard.prompt}
-					title={flashcard.title}
-					prompt={flashcard.prompt}
-					solution={flashcard.solution}
-				/>
-			))}
+		<div className="home-container">
+			<div className="flashcard-container">
+				{flashcardContent.map((flashcard) => (
+					<Flashcard
+						key={flashcard.prompt}
+						title={flashcard.title}
+						prompt={flashcard.prompt}
+						solution={flashcard.solution}
+					/>
+				))}
+			</div>
 		</div>
 	);
 }

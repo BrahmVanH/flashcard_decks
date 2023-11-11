@@ -1,7 +1,19 @@
+.home-container {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 1fr 3fr 1fr;
+	grid-template-areas: 
+  'header header header'
+  '. flashcard-container .'
+  'navbar navbar navbar';
+}
+
 .flashcard-container {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  grid-area: flashcard-container;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
