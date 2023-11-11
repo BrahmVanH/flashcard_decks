@@ -1,46 +1,18 @@
-const express = require('express');
-require('dotenv').config();
-const { readFileSync } = require('fs');
-const path = require('path');
-const { ApolloServer } = require('apollo-server-express');
-
-const { 
-	// typeDefs,
-	 resolvers } = require('./schemas');
-const db = require('./config/connection');
-
-const app = express();
-const PORT = process.env.PORT || 3001;
-
-const typeDefs = readFileSync("./schemas/schema.graphql", { encoding: "utf-8" });
-
-const server = new ApolloServer({
-	typeDefs,
-	resolvers,
-});
-
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
-// if we're in production, serve client/build as static assets
-if (process.env.NODE_ENV === 'production') {
-	app.use(express.static(path.join(__dirname, '../client/build')));
-}
-
-// Create a new instance of an Apollo server with the GraphQL schema
-const startApolloServer = async (typeDefs, resolvers) => {
-	await server.start();
-	server.applyMiddleware({ app });
-
-	db.once('open', () => {
-		app.listen(PORT, () => {
-			console.log(`API server running on port ${PORT}!`);
-			console.log(
-				`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`
-			);
-		});
-	});
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-
-// Call the async function to start the server
-startApolloServer(typeDefs, resolvers);
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const connection_1 = require("./config/connection");
+const routes_1 = __importDefault(require("./routes"));
+const PORT = process.env.PORT || 3001;
+const app = (0, express_1.default)();
+app.use(express_1.default.urlencoded({ extended: true }));
+app.use(express_1.default.json());
+app.use(routes_1.default);
+connection_1.db.once('open', () => {
+    app.listen(PORT, () => {
+        console.log(`API server running on port ${PORT}`);
+    });
+});

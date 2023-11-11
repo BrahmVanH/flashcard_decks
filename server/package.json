@@ -1,28 +1,27 @@
 {
-  "name": "flashcard-server",
-  "version": "1.0.0",
-  "description": "",
-  "proxy": "http://localhost:3001",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "watch": "nodemon server.js",
-    "seed": "node seeders/seed.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@graphql-tools/schema": "^10.0.0",
-    "apollo-server-express": "^3.12.0",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "fs": "^0.0.1-security",
-    "graphql": "^16.8.1",
-    "graphql-tag": "^2.12.6",
-    "mongoose": "^7.2.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.3"
-  }
+	"name": "flashcard_decks_api",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js",
+		"dev": "nodemon server.js",
+		"seed": "node seeders/seed.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"dependencies": {
+		"dotenv": "^16.3.1",
+		"express": "^4.18.2",
+		"joi": "^17.11.0",
+		"mongoose": "^6.12.3"
+	},
+	"devDependencies": {
+		"@types/dotenv": "^8.2.0",
+		"@types/express": "^4.17.21",
+		"@types/mongoose": "^5.11.97",
+		"nodemon": "^2.0.22",
+		"typescript": "^5.2.2"
+	}
 }
