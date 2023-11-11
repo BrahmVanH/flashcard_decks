@@ -7,7 +7,7 @@ const react_1 = __importDefault(require("react"));
 require("./style.css");
 function Flashcard(props) {
     const { title, prompt, solution } = props;
-    return (react_1.default.createElement("div", { className: "flashcard card col-lg-3 col-md-5 col-sm-11" },
+    return (react_1.default.createElement("div", { id: 'flashcard', className: "flashcard col-lg-3 col-md-5 col-sm-11" },
         react_1.default.createElement("div", { className: "flashcard-header" },
             react_1.default.createElement("h3", null, title)),
         react_1.default.createElement("div", { className: "flashcard-content-container" },

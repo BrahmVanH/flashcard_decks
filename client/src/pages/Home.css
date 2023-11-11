@@ -1,18 +1,34 @@
 .home-container {
+	height: 100%;
+	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr 3fr 1fr;
-	grid-template-rows: 1fr 3fr 1fr;
-	grid-template-areas: 
-  'header header header'
-  '. flashcard-container .'
-  'navbar navbar navbar';
+	grid-template-columns: [line1] 1fr [line2] 3fr [line3] 1fr [line4];
+	grid-template-rows: [line1] 1fr [line2] 3fr [line3] .0282582217% [line4] 17.17417783% [line5];
+}
+
+.background-container-upper {
+	background-image: url('../assets/img/background_temp_upper.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	grid-column: 1 / 4;
+	grid-row: 1 / 3;
+	z-index: 300;
+}
+
+.background-container-lower {
+	background-image: url('../assets/img/background_temp_lower.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	grid-column: 1 / 4;
+	grid-row: 3 / 5;
+	z-index: 1000;
 }
 
 .flashcard-container {
-
-  grid-area: flashcard-container;
-	height: 100vh;
-	width: 100vw;
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
 	display: flex;
 	justify-content: center;
 	align-items: center;

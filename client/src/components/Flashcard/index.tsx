@@ -11,7 +11,7 @@ interface FlashcardProps {
 function Flashcard(props: FlashcardProps) {
 	const { title, prompt, solution } = props;
 	return (
-		<div className="flashcard card col-lg-3 col-md-5 col-sm-11">
+		<div id='flashcard' className="flashcard col-lg-3 col-md-5 col-sm-11">
 			<div className="flashcard-header">
 				<h3>{title}</h3>
 			</div>
