@@ -49,26 +49,58 @@ function Home() {
         // },
     ];
     const main = (0, react_1.useRef)(null);
-    const triggerAnimation = () => {
+    const triggerCardAnimation = () => {
         let ctx = gsap_1.default.context(() => {
-            gsap_1.default.fromTo('#flashcard', { y: 500, x: 0, scaleX: 0.4, scaleY: 1.4, opacity: 0 }, {
-                y: 0,
-                scaleX: 1,
-                scaleY: 1,
+            let tl = gsap_1.default.timeline();
+            tl.fromTo('#flashcard', { y: 500, x: 0, scale: 0.98 }, {
+                y: -5,
                 x: 0,
-                opacity: 1,
-                ease: 'expoScale(0.1, 1, power2.inOut)',
-                duration: 10,
+                scale: 0.98,
+                ease: 'expoScale(0.1, 1, power2.in)',
+                duration: 1.5,
+            });
+            tl.to('#flashcard', {
+                y: 0,
+                x: 0,
+                ease: 'expoScale(0.1, 1, power2.in)',
+                scale: 1,
+                duration: 2,
             });
         }, main);
         return () => ctx.revert();
     };
+    const triggerShadowAnimation = () => {
+        let ctx = gsap_1.default.context(() => {
+            let tl = gsap_1.default.timeline();
+            tl.set('#shadow', {
+                opacity: 0.50,
+                scale: 1.5,
+            });
+            tl.fromTo('#shadow', {
+                y: -4,
+                ease: 'expoScale(0.1, 1, power2.in)',
+                scale: 1.5,
+                opacity: 1
+            }, { y: 32, ease: 'expoScale(0.1, 1, power2.in)', scale: 0.8, duration: 1.5, opacity: 0.90 });
+            tl.to('#shadow', {
+                y: 30,
+                scale: 1,
+                ease: 'expoScale(0.1, 1, power2.in)',
+                duration: 2,
+                opacity: 1
+            });
+        });
+        return () => ctx.revert();
+    };
     (0, react_1.useLayoutEffect)(() => {
-        triggerAnimation();
+        triggerCardAnimation();
+        triggerShadowAnimation();
     }, []);
     return (react_1.default.createElement("div", { ref: main, className: "home-container" },
         react_1.default.createElement("div", { className: "background-container-upper" }),
         react_1.default.createElement("div", { className: "flashcard-container" }, flashcardContent.map((flashcard) => (react_1.default.createElement(Flashcard_1.default, { key: flashcard.prompt, title: flashcard.title, prompt: flashcard.prompt, solution: flashcard.solution })))),
+        react_1.default.createElement("div", { className: "shadow-container" },
+            react_1.default.createElement("div", { id: 'shadow', className: "shadow" })),
         react_1.default.createElement("div", { className: "background-container-lower" })));
 }
 exports.default = Home;

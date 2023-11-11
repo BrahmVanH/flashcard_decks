@@ -24,30 +24,66 @@ function Home() {
 		// },
 	];
 
-	const main:RefObject<HTMLDivElement>  = useRef(null);
+	const main: RefObject<HTMLDivElement> = useRef(null);
 
-	const triggerAnimation = () => {
+	const triggerCardAnimation = () => {
 		let ctx = gsap.context(() => {
-			gsap.fromTo(
+			let tl = gsap.timeline();
+			tl.fromTo(
 				'#flashcard',
-				{ y: 500, x: 0, scaleX: 0.4, scaleY: 1.4, opacity: 0 },
+				{ y: 500, x: 0, scale: 0.98 },
 				{
-					y: 0,
-					scaleX: 1,
-					scaleY: 1,
+					y: -5,
 					x: 0,
-					opacity: 1,
-					ease: 'expoScale(0.1, 1, power2.inOut)',
-					duration: 3,
+					scale: 0.98,
+					ease: 'expoScale(0.1, 1, power2.in)',
+					duration: 1.5,
 				}
 			);
+			tl.to('#flashcard', {
+				y: 0,
+				x: 0,
+				ease: 'expoScale(0.1, 1, power2.in)',
+				scale: 1,
+				duration: 2,
+			});
 		}, main);
 
 		return () => ctx.revert();
 	};
 
+	const triggerShadowAnimation = () => {
+		let ctx = gsap.context(() => {
+			let tl = gsap.timeline();
+			tl.set('#shadow', {
+				opacity: 0.50,
+				scale: 1.5,
+			})
+			tl.fromTo(
+				'#shadow',
+				{
+					y: -4,
+					ease: 'expoScale(0.1, 1, power2.in)',
+					scale: 1.5,
+					opacity: 1
+				},
+				{  y: 32, ease: 'expoScale(0.1, 1, power2.in)', scale: 0.8, duration: 1.5, opacity: 0.90 }
+			);
+			tl.to('#shadow', {
+				y: 30,
+				scale: 1,
+				ease: 'expoScale(0.1, 1, power2.in)',
+				duration: 2,
+				opacity: 1
+			
+			});
+		})
+		return () => ctx.revert();
+	}
+
 	useLayoutEffect(() => {
-		triggerAnimation();
+		triggerCardAnimation();
+		triggerShadowAnimation();
 	}, []);
 
 	return (
@@ -62,6 +98,9 @@ function Home() {
 						solution={flashcard.solution}
 					/>
 				))}
+			</div>
+			<div className="shadow-container">
+				<div id='shadow' className="shadow"></div>
 			</div>
 			<div className="background-container-lower"></div>
 		</div>

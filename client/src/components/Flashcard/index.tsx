@@ -1,5 +1,8 @@
 import React from 'react';
 
+import { GrNext, GrPrevious } from 'react-icons/gr';
+import { GoLightBulb } from 'react-icons/go';
+
 import './style.css';
 
 interface FlashcardProps {
@@ -11,7 +14,7 @@ interface FlashcardProps {
 function Flashcard(props: FlashcardProps) {
 	const { title, prompt, solution } = props;
 	return (
-		<div id='flashcard' className="flashcard col-lg-3 col-md-5 col-sm-11">
+		<div id="flashcard" className="flashcard col-lg-3 col-md-5 col-sm-11">
 			<div className="flashcard-header">
 				<h3>{title}</h3>
 			</div>
@@ -23,11 +26,18 @@ function Flashcard(props: FlashcardProps) {
 					<p>{solution}</p>
 				</div>
 			</div>
-      <div className='flashcard-footer'>
-        <button className='show-solution-btn'>Show Solution</button>
-        <p>1/20</p>
-        <button className='next-card-btn'>Next Card</button>
-      </div>
+			<div className="flashcard-footer">
+				<button className="prev-card-btn">
+					<GrPrevious />
+				</button>
+				<button className="show-solution-btn">
+					<GoLightBulb />
+				</button>
+				<p>1/20</p>
+				<button className="next-card-btn">
+					<GrNext />
+				</button>
+			</div>
 		</div>
 	);
 }

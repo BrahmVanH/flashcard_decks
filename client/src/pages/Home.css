@@ -3,7 +3,7 @@
 	width: 100%;
 	display: grid;
 	grid-template-columns: [line1] 1fr [line2] 3fr [line3] 1fr [line4];
-	grid-template-rows: [line1] 1fr [line2] 3fr [line3] .0282582217% [line4] 17.17417783% [line5];
+	grid-template-rows: [line1] 1fr [line2] 3fr [line3] 0.0282582217% [line4] 17.17417783% [line5];
 }
 
 .background-container-upper {
@@ -23,7 +23,7 @@
 	background-size: cover;
 	grid-column: 1 / 4;
 	grid-row: 3 / 5;
-	z-index: 1000;
+	z-index: 700;
 }
 
 .flashcard-container {
@@ -32,4 +32,31 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.shadow-container {
+	display: flex;
+	overflow: hidden;
+
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	grid-row: 3 / span4;
+	grid-column: 2 / 3;
+	z-index: 900;
+}
+
+.shadow {
+	height: 5px;
+	width: 150px;
+	transform: translateY(-2px);
+	border: 1px solid transparent;
+	border-radius: 20px;
+	position: relative;
+	background: radial-gradient(
+		rgba(9, 9, 9, 0.903),
+		rgba(9, 9, 9, 0.573),
+		rgba(60, 60, 60, 0.397)
+	);
+	z-index: 1000;
 }

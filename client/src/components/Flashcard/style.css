@@ -4,7 +4,7 @@
 	background-color: white;
 	padding: 0.5rem;
 	margin: 1rem;
-	width: 50% !important;
+	width: 30% !important;
 	height: 50vh !important;
 	position: relative;
 	display: flex;
@@ -14,9 +14,6 @@
 	border-radius: 10px;
 	border: 1px solid transparent;
 	min-width: 0;
-	color: var(--bs-body-color);
-	border: var(--bs-card-border-width) solid var(--bs-card-border-color);
-	border-radius: var(--bs-card-border-radius);
 	z-index: 500;
 }
 
