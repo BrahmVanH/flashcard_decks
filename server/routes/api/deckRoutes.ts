@@ -4,7 +4,7 @@ const router = Router();
 
 router.get('/get', getAllDecks);
 router.get('/get/:id', getDeckById);
-router.post('/create', createDeck);
+router.post('/create/:newDeck', createDeck);
 router.patch('/update/:id', updateDeck);
 router.delete('/delete/:id', deleteDeck);
 

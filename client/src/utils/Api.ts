@@ -16,14 +16,14 @@ export const getDecks = async (): Promise<Response> => {
     throw err
 	}
 };
-export const getDeckById = async (deckId: string): Promise<Response> => {
+export const getDeckById = async (id: string): Promise<Response> => {
   try {
 
     const response = await fetch('/api/decks/get/:id', {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(deckId),
+      body: JSON.stringify(id),
     });
 
     if (!response.ok) {
@@ -37,4 +37,57 @@ export const getDeckById = async (deckId: string): Promise<Response> => {
   }
 };
 
-export const createDeck = async ()
+type cardsType = {
+	title: string;
+	prompt: string;
+	solution: string;
+};
+
+type deckType = {
+	deckName: string;
+	cards: cardsType[];
+};
+
+export const createDeck = async (newDeck: deckType): Promise<Response> => {
+  try {
+		const response = await fetch('/api/decks/create/:newDeck', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(newDeck),
+		});
+		if (!response.ok) {
+			throw new Error(`Failed to create deck: ${response.statusText}`);
+		}
+		return response;
+	} catch (err) {
+		console.error({
+			message: 'There was an error in creating a new Deck: ',
+			err,
+		});
+		throw err;
+	}
+}
+
+export const deleteDeck = async (id: string): Promise<Response> => {
+	try {
+		const response = await fetch('/api/decks/delete/:id', {
+			method: 'DELETE',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(id),
+		});
+		if (!response.ok) {
+			throw new Error(`Failed to delete deck: ${response.statusText}`);
+		}
+		return response;
+	} catch (err) {
+		console.error({
+			message: 'There was an error in deleting a Deck: ',
+			err,
+		});
+		throw err;
+	}
+};
